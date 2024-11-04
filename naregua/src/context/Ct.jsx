@@ -17,7 +17,7 @@ const CtReducer = (state, action) => {
         Stage: STAGES[1],
       };
 
-    case 'START_STAGE':
+    case 'CADASTRO_STAGE':
       return {
         Stage: STAGES[2],
       };
