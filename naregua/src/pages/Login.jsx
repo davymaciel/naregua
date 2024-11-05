@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useState, useContext} from "react";
 import { FaUser, FaLock } from "react-icons/fa";
+import { CtContext } from '../context/Ct';
 import "./Login.css";
 
 const Login = () => {
+  const [CtState, dispatch] = useContext(CtContext);
   // Estados para armazenar as entradas do usuário
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -51,7 +53,7 @@ const Login = () => {
         <button type="submit">Login</button>
         <div className="signup-link">
           <p>
-            Não tem uma conta? <a href='#'>Registar</a>
+            Não tem uma conta? <a onClick={() => dispatch({ type: 'CADASTRO_STAGE' })} href='#'>Registar</a>
           </p>
         </div>
       </form>
