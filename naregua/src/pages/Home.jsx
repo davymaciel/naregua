@@ -6,10 +6,21 @@ const Home = () => {
     const [CtState, dispatch] = useContext(CtContext);
 
 return (
-    <div>
-        <h1>Home Page</h1>
-        <button onClick={() => dispatch({ type: 'LOGIN_STAGE' })}>Login</button>
-        <button onClick={() => dispatch({ type: 'CADASTRO_STAGE' })}>Cadastro</button>
+   
+   <div className="home">
+       
+       <header className="header">
+    
+       <img src= "./src/img/logonaregua.png"   className="header-image" />
+       
+  
+  <div className="auth-buttons">
+                <button onClick={() => dispatch({ type: 'LOGIN_STAGE' })}>Login</button>
+                <button onClick={() => dispatch({ type: 'CADASTRO_STAGE' })}>Cadastro</button>
+            </div>   
+       </header>
+      
+       
     </div>
 )
 }

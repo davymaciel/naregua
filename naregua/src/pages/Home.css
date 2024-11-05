@@ -1,3 +1,43 @@
-h1 {
-    color: black;
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinha logo à esquerda e botões à direita */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.header-image {
+    width: 85px; 
+    margin-right: 10px;
+}
+
+/* Estilos para os botões */
+.auth-buttons {
+    display: flex; /* Exibe os botões lado a lado */
+    gap: 0.5px; /* Espaçamento entre os botões */
+}
+
+button {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 10px;
+    background: rgba(101, 83, 60, 0.81);
+    border-radius: 0.6rem ;
+    border: none;
+    margin-right: 15px;
+}
+
+button:hover {
+    color: white;
+    background: rgba(0, 0, 0, 0.286);
+}   
+
+body{
+    background-image: url('https://img.vozdascomunidades.com.br/wp-content/uploads/2020/10/26000614/BATALHA-DOS-BARBEIROS-%C2%A9-GUILHERME-OLIVEIRA-%EF%BF%BD-%40ORIGINAL_ZN-2-scaled.jpg');
+    background-size: cover;
 }

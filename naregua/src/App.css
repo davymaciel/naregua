@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: rgb(248, 232, 225);
+  
   background-size: cover;
   margin: 0;
   display: flex;
@@ -31,19 +31,5 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
-  cursor: pointer;
-  padding: 0.8rem 1.5rem;
-  background: rgb(121, 36, 36);
-  border-radius: 3rem;
-  border: none;
-}
 
-button:hover {
-  color: white;
-  background: black;
-}
 
