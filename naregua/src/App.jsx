@@ -6,8 +6,10 @@ import Login from './pages/Login'
 import Cadastro from './pages/Cadastro'
 
 
+
 const App = () => {
   const [CtState, dispatch] = useContext(CtContext);
+
   return (
     <div>
       {CtState.Stage === 'First' && <Home/>}

@@ -1,85 +1,31 @@
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Alinha logo à esquerda e botões à direita */
-    position: absolute;
-    top: 0;
-    left: 0;
+.navbar {
     width: 100%;
-    background-color: rgb(255, 243, 227);
-}
-
-.header-image {
-    width: 85px; 
-    margin-right: 10px;
-}
-
-/* Estilos para os botões */
-.auth-buttons {
-    display: flex; /* Exibe os botões lado a lado */
-    gap: 0.5px; /* Espaçamento entre os botões */
-}
-
-button {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 0.8rem;
-    cursor: pointer;
-    padding: 10px;
-    background: rgba(80, 54, 46, 0.81);
-    border-radius: 0.6rem ;
-    border: none;
-    margin-right: 15px;
-}
-
-button:hover {
-    color: white;
-    background: rgba(0, 0, 0, 0.286);
-}   
-
-.Page1{
-    background-image: url('https://img.vozdascomunidades.com.br/wp-content/uploads/2020/10/26000614/BATALHA-DOS-BARBEIROS-%C2%A9-GUILHERME-OLIVEIRA-%EF%BF%BD-%40ORIGINAL_ZN-2-scaled.jpg');
-    background-size: cover;
-
-}
-
-.Page2 {
-    background-color: black;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-position: absolute;
-    background-size: cover;
-}
-
-  .container .page1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px;
-  }
+    background: #fff;
+    padding: 15px 7%;
+}
 
-.interface{
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-  }
+.logo {
+    width: 80px;
+    cursor: pointer;
+}
 
-section{
-    height: 100vh;
-    scroll-snap-align: start;
-    display: flex;
-    position: sticky;
-    top: 0;
-    left: 0;
-    transition-delay: 2s;
-    justify-content: center;
-    color: white;
-  }
+ul {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+
+
