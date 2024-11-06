@@ -7,8 +7,10 @@ const Home = () => {
 
 return (
    
-   <div className="home">
-       
+    <div class="interface"> 
+       <section class="Page1">
+        <div class="container">
+
        <header className="header">
     
        <img src= "./src/img/logonaregua.png"   className="header-image" />
@@ -19,7 +21,11 @@ return (
                 <button onClick={() => dispatch({ type: 'CADASTRO_STAGE' })}>Cadastro</button>
             </div>   
        </header>
-      
+       </div>
+      </section>
+      <section class="Page2">
+        <h1>OOOOO</h1>
+      </section>
        
     </div>
 )
