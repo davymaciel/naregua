@@ -7,22 +7,25 @@
 
 html, body, #root {
   height: 100%;
+  ;
 }
 
 .container {
   width: 100vw;
   min-height: 100vh;
   background: #bebcba;
+  background-image: url('https://conteudo.solutudo.com.br/wp-content/uploads/2020/01/BARBEARIA-ARACAJU-BARBEIRO-MESTRE.png');
+  background-size: cover;
  }
  
  button {
      color: rgb(255, 255, 255);
      font-weight: bold;
-     font-size: 0.8rem;
+     font-size: 1.2rem;
      cursor: pointer;
      padding: 10px;
      background:  #512f1f;
-     border-radius: 0.6rem ;
+     border-radius: 0.6rem 0.4rem;
      border: none;
      margin-right: 15px;
      justify-content: space-between;
