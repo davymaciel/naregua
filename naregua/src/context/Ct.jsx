@@ -1,6 +1,6 @@
 import { createContext, useReducer } from 'react';
 
-const STAGES = ['First', 'Second', 'Third'];
+const STAGES = ['First', 'Second', 'Third', 'Fourth'];
 
 const initialState = {
   Stage: STAGES[0],
@@ -21,6 +21,11 @@ const CtReducer = (state, action) => {
       return {
         Stage: STAGES[2],
       };
+
+      case 'AGENDAMENTO_STAGE':
+        return {
+          Stage: STAGES[3],
+        };
 
     default:
       return state;

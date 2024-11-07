@@ -25,10 +25,14 @@ return (
             <button onClick={() => dispatch({ type: 'CADASTRO_STAGE' })}>Cadastro</button>
         </div>      
   </div>
+
+            <button onClick={() => dispatch({ type: 'AGENDAMENTO_STAGE' })}>Agende seu Horário</button> 
+  <div>
   <Sobre />
   <Serviços />
   <Equipe />
   <Contato />
+  </div>
 </div>
   
 )
