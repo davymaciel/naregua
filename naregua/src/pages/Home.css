@@ -5,7 +5,6 @@
     justify-content: space-between;
     background: #ffffff86;
     padding: 15px 7%;
-    
 }
 
 .logo {
@@ -27,18 +26,27 @@ ul li {
     padding-right: 110px;
 }
 
-.container-home{
+.container-home {
     color: white;
-    
-}
+    }
+
 .container-home h1 {
-    text-align: justify;
-    font-size:40px;
-}
+    font-size: 40px;
+    
+    }
 
 .container-home p {
     font-size: 30px;
-    text-align: justify;
+    
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
-
+h1{
+    font-size: 30px;
+    text-align: justify;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
