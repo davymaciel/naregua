@@ -1,6 +1,7 @@
 const Sobre = () => {
 
     return (
+        
         <div className= 'container-home'>
 
     <p>NaRégua Barbearia é mais que uma barbearia,buscamos <br/>oferecer a você uma experiência de cuidado e atenção aos detalhes. 

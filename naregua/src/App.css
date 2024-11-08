@@ -36,4 +36,7 @@ html, body, #root {
      background: rgba(80, 54, 46, 0.81);
  }     
 
+ h1 {
+  color: white;
+ }
 
