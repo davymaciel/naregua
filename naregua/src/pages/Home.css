@@ -145,22 +145,22 @@ background-image: url('https://conteudo.solutudo.com.br/wp-content/uploads/2020/
 background-size: cover;
 }
 #servicos {
-    background-color: #ffffff;
+    background-color: #000000d1;
     margin-top: 0; /* Remove margem superior de seção */
 }
 
 #equipe {
-    background-color: #ffffffc4;
+    background-color: #000000d1;
 }
 
 #contato {
-    background-color: #ffffffc4;
+    background-color:#000000d1;
     color: black;
 }
 h1{
-    color: black;
+    color:  white;
 }
-.Services{
+.Services, Equipe{
     width: 100%;
     margin: 0 auto;
     min-height: 100vh;
@@ -195,7 +195,7 @@ h1{
 
 .carousel h1{
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .carousel button{
 text-align: center;
