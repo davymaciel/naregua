@@ -13,8 +13,8 @@ html, body, #root {
 .container {
   width: 100vw;
   min-height: 100vh;
-  background: #bebcba;
-  background-image: url('https://heygoldie.com/blog/wp-content/uploads/2021/12/barber-shop-decor-ideas.jpg');
+  
+  
   background-size: cover;
   background-position: center;
  }

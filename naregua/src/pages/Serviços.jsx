@@ -1,10 +1,48 @@
+import { useState, useEffect, useRef } from 'react'
+import { motion } from 'framer-motion'
+import img1 from './img/sv1.jpeg'
+import img2 from './img/sv2.jpg'
+import img3 from './img/sv3.jpg'
+
+
+const images = [img1, img2, img3]
+
 const Serviços = () => {
+    const carousel = useRef();
+    const [width, setWidth] = useState(0)
+
+    useEffect(() => {
+        console.log(carousel.current?.scrollWidth, carousel.current?.offsetWidth)
+        setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
+    }, [])
+
 
     return (
-        <div>
-            <h1>Degradê</h1>
+        <div className='Services'>
+            
+
+            <motion.div ref={carousel} className='carousel' whileTap={{ cursor: "grabbing" }}>
+            <h1>Nossos Serviços</h1>
+                <motion.div
+                    className='inner'
+                    drag="x"
+                    dragConstraints={{ right: 0, left: -width }}
+                    initial={{ x: 100 }}
+                    animate={{ x: 0 }}
+                    transition={{ duration: 0.8 }}>
+
+                    {images.map(image => (
+                        <motion.div className='item' key={image}>
+                            <img src={image} alt="Texto" />
+                        </motion.div>
+                    ))}
+
+                </motion.div>
+                <button onClick={() => dispatch({ type: 'AGENDAMENTO_STAGE' })}>Agende seu Horário</button>
+            </motion.div>
+            
         </div>
-    )
+    );
 }
 
 export default Serviços

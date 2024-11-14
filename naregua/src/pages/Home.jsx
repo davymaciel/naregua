@@ -1,3 +1,4 @@
+// Home.js
 import { useContext } from 'react';
 import { CtContext } from '../context/Ct';
 import logoImage from './img/NareguaLogo.svg';
@@ -13,30 +14,35 @@ const Home = () => {
   return (
     <div className='container'>
       <div className='navbar'>
-        <img src={logoImage} alt="" className="logo" />
+        <img src={logoImage} alt="Logo NaRégua" className="logo" />
         <ul>
-          <li>Sobre</li>
-          <li>Serviços</li>
-          <li>Equipe</li>
-          <li>Contato</li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
         <div className="buttonsLC">
           <button onClick={() => dispatch({ type: 'LOGIN_STAGE' })}>Login</button>
           <button onClick={() => dispatch({ type: 'CADASTRO_STAGE' })}>Cadastro</button>
         </div>
-
-
       </div>
 
-      <div>
-        <Sobre />
-        <Serviços />
-        <Equipe />
-        <Contato />
+      <div className='content'>
+        <section id="sobre">
+          <Sobre />
+        </section>
+        <section id="servicos">
+          <Serviços />
+        </section>
+        <section id="equipe">
+          <Equipe />
+        </section>
+        <section id="contato">
+          <Contato />
+        </section>
       </div>
     </div>
-
-  )
+  );
 }
 
-export default Home
+export default Home;
