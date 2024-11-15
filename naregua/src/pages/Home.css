@@ -28,17 +28,12 @@ h1{
 }
 
 .navbar {
-    position:fixed;
-    top: 0;
-    width: 105%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(255, 255, 255); /* Fundo branco semi-transparente */
-    padding: 15px 7%;
-    
-    z-index: 10;
-    margin: 0; /* Remove qualquer margem extra */
+    padding: 2px 2%;
+    background-color: #f9f9f9;
 }
 
 .logo {
@@ -46,14 +41,17 @@ h1{
     cursor: pointer;
 }
 
+ul{
+    flex: 1;
+    list-style: none;
+    text-align: center;
+}
 
-
-ul,li {
+ul li {
     display: inline-block;
-    margin: 0;
+    margin: 10px 20px;
     font-size: 18px;
     cursor: pointer;
-    padding-right: 110px;
     color: #000000; /* Cor preta para texto */
 }
 
@@ -75,6 +73,18 @@ ul,li {
     background-color: #ffffff; /* Cor do fundo desejada */
 }
 
+.buttonAG {
+ margin: 350px;
+ margin-top: 0;
+ color: #ffffff;
+ font-weight: bold;
+ font-size: 1.1rem;
+ cursor: pointer;
+ padding: 8px 15px;
+ background: #512f1f;
+ border-radius: 8px;
+ border: none;
+}
 
 .buttonsLC {
     display: flex;
@@ -101,7 +111,6 @@ ul,li {
 .container-home {
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 80px; /* Espaço para o header fixo */
 }
 
 .container-home h1 {
@@ -112,11 +121,12 @@ ul,li {
 }
 
 .container-home p {
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     font-style: italic;
     color: rgb(255, 255, 255); /* Garante que o texto permaneça branco */
+    
 }
 
 h1 {
@@ -127,9 +137,6 @@ h1 {
     font-style: italic;
 }
 
-.content {
-    margin-top: 100px; /* Espaço para o header fixo */
-}
 
 section {
     height: 100vh; /* Cada seção ocupa a altura total da tela */
@@ -145,23 +152,24 @@ background-image: url('https://conteudo.solutudo.com.br/wp-content/uploads/2020/
 background-size: cover;
 }
 #servicos {
-    background-color: #000000d1;
+    background-color: #ffffff;
     margin-top: 0; /* Remove margem superior de seção */
 }
 
 #equipe {
-    background-color: #000000d1;
+    background-color: #120f0f;
 }
 
 #contato {
-    background-color:#000000d1;
+    background-color:#ffffff;
     color: black;
 }
 h1{
-    color:  white;
+    color:  rgb(0, 0, 0);
 }
-.Services, Equipe{
+.Services {
     width: 100%;
+    padding-top: 330px;
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
@@ -182,9 +190,10 @@ h1{
 }
 
 .item img{
-    width: 100%;
+    width: 300px;
     height: 90%;
     border-radius: 12px;
+    justify-content: space-between;
     pointer-events: none;
 }
 .carousel{
@@ -193,11 +202,42 @@ h1{
     
 }
 
-.carousel h1{
+.Services .carousel h1{
     text-align: center;
+    justify-content: center;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.Equipe .carousel h1{
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
     color: rgb(255, 255, 255);
 }
+
 .carousel button{
 text-align: center;
     align-items: center;
 }
+
+.Footer {
+    background-color: black;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+
+}
+
+.Footer ul li {
+    color: #ffffff;
+    margin: 0 1em;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+
+.Footer ul li:hover {
+    color:#ffbb13;
+}
+

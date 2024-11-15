@@ -6,12 +6,14 @@ import Sobre from './Sobre';
 import Serviços from './Serviços';
 import Equipe from './Equipe';
 import Contato from './Contato';
+import Footer from './Footer';
 import "./Home.css";
 
 const Home = () => {
   const [CtState, dispatch] = useContext(CtContext);
 
   return (
+  <div>
     <div className='container'>
       <div className='navbar'>
         <img src={logoImage} alt="Logo NaRégua" className="logo" />
@@ -40,8 +42,10 @@ const Home = () => {
         <section id="contato">
           <Contato />
         </section>
+          <Footer />
       </div>
     </div>
+  </div> 
   );
 }
 
