@@ -1,4 +1,5 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useContext } from 'react'
+import { CtContext } from '../context/Ct';
 import { motion } from 'framer-motion'
 import img1 from './img/sv1.jpeg'
 import img2 from './img/sv2.jpg'
@@ -10,6 +11,7 @@ const images = [img1, img2, img3]
 const Serviços = () => {
     const carousel = useRef();
     const [width, setWidth] = useState(0)
+    const [CtState, dispatch] = useContext(CtContext);
 
     useEffect(() => {
         console.log(carousel.current?.scrollWidth, carousel.current?.offsetWidth)

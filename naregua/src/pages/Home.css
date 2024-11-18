@@ -224,20 +224,26 @@ text-align: center;
 .Footer {
     background-color: black;
     color: white;
-    padding: 3rem;
+    padding: 1rem;
     text-align: center;
 
 }
 
-.Footer ul li {
+.Footer ul a {
     color: #ffffff;
-    margin: 0 1em;
+    margin: 0.4rem;
     font-size: 1.5rem;
     cursor: pointer;
     
 }
 
-.Footer ul li:hover {
+.Footer ul a:hover {
+    color:#ffbb13;
+}
+
+
+.copy_right span {
+    font-weight: bold;
     color:#ffbb13;
 }
 

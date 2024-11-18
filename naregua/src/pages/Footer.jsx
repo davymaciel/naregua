@@ -5,14 +5,14 @@ const Footer = () => {
     return (
             <footer className="Footer">
                 <ul>
-                    <li>
+                    <a href="https://www.instagram.com/sa_thisga/?next=%2F" target="_blank" rel="noopener noreferrer">
                         <FaInstagram />
-                    </li>
-                    <li>
+                    </a>
+                    <a href="https://w.app/jGUu7F" target="_blank" rel="noopener noreferrer">
                         <FaWhatsapp />
-                    </li>
+                    </a>
                 </ul>
-                <p><span>NaRégua</span> &copy; 2024</p>
+                <p className="copy_right"><span>NaRégua</span> &copy; 2024</p>
             </footer>
     )
 }
