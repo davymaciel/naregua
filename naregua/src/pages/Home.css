@@ -33,7 +33,7 @@ h1{
     align-items: center;
     justify-content: space-between;
     padding: 2px 2%;
-    background-color: #f9f9f9;
+    background-color: #000000;
 }
 
 .logo {
@@ -52,7 +52,7 @@ ul li {
     margin: 10px 20px;
     font-size: 18px;
     cursor: pointer;
-    color: #000000; /* Cor preta para texto */
+    color: #f9f6f6; /* Cor preta para texto */
 }
 
 .navbar ul {
@@ -64,7 +64,7 @@ ul li {
 
 .navbar ul li a {
     text-decoration: none;
-    color: #000000; /* Cor preta para os links */
+    color: #ffffff; /* Cor preta para os links */
     font-weight: bold;
     width: 100%;
 }
@@ -81,7 +81,7 @@ ul li {
  font-size: 1.1rem;
  cursor: pointer;
  padding: 8px 15px;
- background: #512f1f;
+ background: #ffbb13;; 
  border-radius: 8px;
  border: none;
 }
@@ -99,7 +99,7 @@ ul li {
     font-size: 1.1rem;
     cursor: pointer;
     padding: 8px 15px;
-    background: #512f1f;
+    background: #ffbb13;;
     border-radius: 8px;
     border: none;
 }
@@ -184,18 +184,34 @@ h1{
 
 .item{
     min-height: 200px;
-    min-width: 400px;
-    padding: 14px;
+    min-width: 300px;
+    padding: 5px;
 
 }
 
 .item img{
-    width: 300px;
+    width: 250px;
     height: 90%;
-    border-radius: 12px;
+    border-radius: 30px;
     justify-content: space-between;
     pointer-events: none;
 }
+
+.itemEQ{
+    min-height: 200px;
+    min-width: 300px;
+    padding: 5px;
+
+}
+
+.itemEQ img{
+    width: 250px;
+    height: 90%;
+    border-radius: 250px;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
 .carousel{
     cursor: grab;
     overflow: hidden;

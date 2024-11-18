@@ -1,7 +1,7 @@
 // Home.js
 import { useContext } from 'react';
 import { CtContext } from '../context/Ct';
-import logoImage from './img/NareguaLogo.svg';
+import logoImage from './img/Naregualogo1.png';
 import Sobre from './Sobre';
 import Serviços from './Serviços';
 import Equipe from './Equipe';

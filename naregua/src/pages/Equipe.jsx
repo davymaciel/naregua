@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import b1 from './img/b1.jfif'
-import b2 from './img/b2.jpg'
-import b3 from './img/b3.png'
+import b2 from './img/b2.jfif'
+import b3 from './img/b3.jfif'
+import b4 from './img/b4.jfif'
 
-
-const images = [b1, b2, b3]
+const images = [b1, b2, b3, b4]
 
 const Equipe = () => {
     const carousel = useRef();
@@ -32,13 +32,12 @@ const Equipe = () => {
                     transition={{ duration: 0.8 }}>
 
                     {images.map(image => (
-                        <motion.div className='item' key={image}>
+                        <motion.div className='itemEQ' key={image}>
                             <img src={image} alt="Texto" />
                         </motion.div>
                     ))}
 
                 </motion.div>
-               
             </motion.div>
             
         </div>
