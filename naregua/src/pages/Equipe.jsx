@@ -23,6 +23,7 @@ const Equipe = () => {
 
             <motion.div ref={carousel} className='carousel' whileTap={{ cursor: "grabbing" }}>
             <h1>Nossa Equipe</h1>
+            
                 <motion.div
                     className='inner'
                     drag="x"
@@ -34,7 +35,7 @@ const Equipe = () => {
                     {images.map(image => (
                         <motion.div className='itemEQ' key={image}>
                             <img src={image} alt="Texto" />
-                        </motion.div>
+                        </motion.div> 
                     ))}
 
                 </motion.div>

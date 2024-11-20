@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef, useContext } from 'react'
 import { CtContext } from '../context/Ct';
 import { motion } from 'framer-motion'
-import img1 from './img/sv1.jpeg'
-import img2 from './img/sv2.jpg'
-import img3 from './img/sv3.jpg'
+import img1 from './img/svs0.jpg'
+import img2 from './img/svs3.jfif'
+import img3 from './img/svs1.jpg'
 
 
 const images = [img1, img2, img3]

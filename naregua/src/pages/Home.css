@@ -171,7 +171,7 @@ h1{
     width: 100%;
     padding-top: 330px;
     margin: 0 auto;
-    min-height: 100vh;
+    min-height: 00vh;
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -263,3 +263,12 @@ text-align: center;
     color:#ffbb13;
 }
 
+.mapa h1 {
+    text-align: center;
+    height: 100px;
+    font-family: "Archivo Black", sans-serif;
+}
+.mapa p {
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+}
