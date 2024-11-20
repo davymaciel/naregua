@@ -1,68 +1,66 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(245, 245, 245);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-   
-  }
-  
-  .container-cadastro {
-    width: 350px;
-    background: rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(67, 60, 60, 0.2);
-    border-radius: 10px;
-    padding: 40px;
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: white;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: white;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  input[type="date"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  input[type="submit"] {
-    width: 100%;
-    background-color: #007bff;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  
-  p {
-    font-size: 14px;
-    margin-bottom: 15px;
-    text-align: center;
-  }
-  
-  
+  font-family: Arial, sans-serif;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
+}
+
+.container-cadastro {
+  width: 350px;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(67, 60, 60, 0.2);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+}
