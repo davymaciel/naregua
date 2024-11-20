@@ -42,7 +42,7 @@ const Login = () => {
           />
           <FaLock className="icon" />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" className="buttonL">Login</button>
         <div className="signup-link">
           <p>
             Não tem uma conta? <a onClick={() => dispatch({ type: 'CADASTRO_STAGE' })} href='#'>Registar</a>
