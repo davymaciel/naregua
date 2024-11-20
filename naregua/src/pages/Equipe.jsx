@@ -5,7 +5,13 @@ import b2 from './img/b2.jfif'
 import b3 from './img/b3.jfif'
 import b4 from './img/b4.jfif'
 
-const images = [b1, b2, b3, b4]
+// equipens e nomes associados
+const equipeData = [
+    { img: b1, nome: 'Lucas' },
+    { img: b2, nome: 'Matheus' },
+    { img: b3, nome: 'Rafael' },
+    { img: b4, nome: 'João' },
+];
 
 const Equipe = () => {
     const carousel = useRef();
@@ -19,12 +25,12 @@ const Equipe = () => {
 
     return (
         <div className='Equipe'>
-            
 
-            <motion.div ref={carousel} className='carousel' whileTap={{ cursor: "grabbing" }}>
-            <h1>Nossa Equipe</h1>
-            
-                <motion.div
+
+            <div ref={carousel} className='carousel' >
+                <h1>Nossa Equipe</h1>
+
+                <div
                     className='inner'
                     drag="x"
                     dragConstraints={{ right: 0, left: -width }}
@@ -32,15 +38,17 @@ const Equipe = () => {
                     animate={{ x: 0 }}
                     transition={{ duration: 0.8 }}>
 
-                    {images.map(image => (
-                        <motion.div className='itemEQ' key={image}>
-                            <img src={image} alt="Texto" />
-                        </motion.div> 
+                    {equipeData.map((item, index) => (
+                        <div className='itemEQ' key={index}>
+                            <img src={item.img} alt={item.nome} />
+                            <p>{item.nome}</p>
+                        </div>
                     ))}
 
-                </motion.div>
-            </motion.div>
-            
+                </div>
+                
+            </div>
+
         </div>
     );
 }

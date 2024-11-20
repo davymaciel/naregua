@@ -129,6 +129,7 @@ const Agendamento = () => {
                 <option value="Lucas">Lucas</option>
                 <option value="Matheus">Matheus</option>
                 <option value="Rafael">Rafael</option>
+                <option value="Rafael">João</option>
             </select>
             <br />
 
