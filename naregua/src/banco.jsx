@@ -13,4 +13,4 @@ async function criarEPopularTabelaUsuarios(nome, sobrenome) {
     db.run(`INSERT INTO usuarios (nome, sobrenome) VALUES (?,?)`, [nome, sobrenome])
 }
 
-criarEPopularTabelaUsuarios();
+criarEPopularTabelaUsuarios(); 
