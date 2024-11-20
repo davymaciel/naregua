@@ -21,7 +21,7 @@ const Home = () => {
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#equipe">Equipe</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#contato">Informações</a></li>
         </ul>
         <div className="buttonsLC">
           <button onClick={() => dispatch({ type: 'LOGIN_STAGE' })}>Login</button>

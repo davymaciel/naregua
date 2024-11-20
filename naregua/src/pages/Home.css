@@ -281,4 +281,6 @@ h1 {
 .mapa p {
   text-align: center;
   font-family: "Archivo Black", sans-serif;
+  height: 5px;
+  margin-top: 20px;
 }
