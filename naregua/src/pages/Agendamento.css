@@ -8,8 +8,8 @@
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px; /* Limite a largura do formulário se necessário */
-    margin: 0 auto; /* Centraliza o formulário */
+    max-width: 600px;
+    margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -32,36 +32,32 @@
 }
 
 .agendamento-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background: #ffbb13;
+    margin-left: 50px;
+    width: 250px;
 }
 
 .agendamento-button:hover {
     background-color: #0056b3;
 }
 
-label{
+label {
     color: black;
 }
+
 .agendamento-checkboxes {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap; /* Faz as caixinhas se moverem para a linha seguinte, se necessário */
-    gap: 1px; /* Espaçamento entre as caixinhas */
-    justify-content: flex-start; /* Alinha as caixinhas à esquerda */
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: flex-start;
 }
 
 .agendamento-checkboxes label {
     display: flex;
-    align-items: center; /* Alinha o texto verticalmente com a caixinha */
-    gap: 10px; /* Espaçamento entre a caixinha e o texto */
-    flex-basis: 30%; /* Ajusta a largura das caixinhas (pode modificar conforme necessário) */
+    align-items: center;
+    gap: 10px;
+    flex-basis: 30%;
     margin-bottom: 10px;
 }
 
