@@ -6,18 +6,14 @@ import "./Login.css";
 
 const Login = () => {
   const [CtState, dispatch] = useContext(CtContext);
-  // Estados para armazenar as entradas do usuário
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  // Função que é chamada quando o formulário é enviado
   const handleSubmit = (event) => {
-    // Impede que a página seja recarregada
     event.preventDefault();
-
-    // Faz o console log das credenciais do usuário
     console.log("Dados de Login:", { username, password });
-  };
+    window.location.href = "./Home.jsx";
+};
 
   return (
     <div className="containerL">
