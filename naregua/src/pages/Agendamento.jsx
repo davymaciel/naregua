@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logoImage from './img/Naregualogo1.png';
 import './Agendamento.css';
 
 const Agendamento = () => {
@@ -64,6 +65,7 @@ const Agendamento = () => {
     };
 
     return (
+    <div>
         <form className="agendamento-form" onSubmit={handleSubmit}>
             <h2 className="agendamento-title">Agendamento de Horário</h2>
 
@@ -137,6 +139,7 @@ const Agendamento = () => {
 
             <button type="submit" className="agendamento-button">Confirmar Agendamento</button>
         </form>
+    </div>    
     );
 };
 

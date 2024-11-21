@@ -18,10 +18,10 @@ const Home = () => {
       <div className='navbar'>
         <img src={logoImage} alt="Logo NaRégua" className="logo" />
         <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#equipe">Equipe</a></li>
-          <li><a href="#contato">Informações</a></li>
+          <li><a className='aN1' href="#sobre">Sobre</a></li>
+          <li><a className='aN2' href="#servicos">Serviços</a></li>
+          <li><a className='aN3' href="#equipe">Equipe</a></li>
+          <li><a className='aN4' href="#contato">Informações</a></li>
         </ul>
         <div className="buttonsLC">
           <button onClick={() => dispatch({ type: 'LOGIN_STAGE' })}>Login</button>
