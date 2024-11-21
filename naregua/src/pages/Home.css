@@ -150,7 +150,7 @@ section {
 }
 
 #sobre {
-  background-image: url("https://conteudo.solutudo.com.br/wp-content/uploads/2020/01/BARBEARIA-ARACAJU-BARBEIRO-MESTRE.png");
+  background-image: url("./img/fundo.png");
   background-size: cover;
 }
 #servicos {
@@ -192,9 +192,10 @@ h1 {
 }
 
 .item img {
-  width: 250px;
+  width: 300px;
   height: 90%;
   border-radius: 30px;
+  padding: 15px;
   justify-content: space-between;
   pointer-events: none;
 }

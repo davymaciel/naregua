@@ -5,7 +5,7 @@ const Footer = () => {
     return (
             <footer className="Footer">
                 <ul>
-                    <a href="https://www.instagram.com/sa_thisga/?next=%2F" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/naregua_barbers/" target="_blank" rel="noopener noreferrer">
                         <FaInstagram />
                     </a>
                     <a href="https://w.app/jGUu7F" target="_blank" rel="noopener noreferrer">

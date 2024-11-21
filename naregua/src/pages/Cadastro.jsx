@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FaUser, FaLock } from "react-icons/fa";
+import logoImage from './img/Naregualogo1.png';
 import "./Cadastro.css";
 
 const Cadastro = () => {
@@ -22,26 +24,43 @@ const Cadastro = () => {
 
   return (
     <div className="container-cadastro">
-      <h2>Formulário de Cadastro</h2>
+        <img src={logoImage} alt="Logo NaRégua" className="logoC"></img>
       
       <form onSubmit={handleSubmit}>
-        <label>Nome completo:</label>
+      <div className="name" >
+        <input type="text" 
+        placeholder="Vulgo" 
+        onChange={handleChange} 
+        required  
+        />
+        <FaUser className="icon" />
+      </div>
+  
+      <div className="email" >
+        <input type="email" 
+        placeholder="E-mail" 
+        onChange={handleChange} 
+        required />
+        <FaUser className="icon" />
+      </div>
 
-        <input type="text" name="fullname" onChange={handleChange} required />
-        <label>Data de nascimento:</label>
+      <div className="senha">
+        <input type="password"  
+        placeholder="Senha" 
+        onChange={handleChange} 
+        required />
+        <FaLock className="icon" />
+      </div>
 
-        <input type="date" name="birthdate" onChange={handleChange} required />
-        <label>Email:</label>
+      <div className="confirmaSenha">
+        <input type="password" 
+         placeholder="Confirme sua senha" 
+         onChange={handleChange} 
+         required />
+        <FaLock className="icon" />
+      </div>
 
-        <input type="email" name="email" onChange={handleChange} required />
-        <label>Senha:</label>
-
-        <input type="password" name="password" onChange={handleChange} required />
-        <label>Confirme sua senha:</label>
-
-        <input type="password" name="confirmPassword" onChange={handleChange} required />
-
-        <button type="submit">Cadastrar</button>
+        <button type="submit" className="buttonC">Cadastrar</button>
       </form>
     </div>
   );

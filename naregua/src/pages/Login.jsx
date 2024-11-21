@@ -1,6 +1,7 @@
 import { useState, useContext} from "react";
 import { FaUser, FaLock } from "react-icons/fa";
 import { CtContext } from '../context/Ct';
+import logoImage from './img/Naregualogo1.png';
 import "./Login.css";
 
 const Login = () => {
@@ -21,7 +22,7 @@ const Login = () => {
   return (
     <div className="containerL">
       <form onSubmit={handleSubmit}>
-        <h1>Acesse o sistema</h1>
+      <img src={logoImage} alt="Logo NaRégua" className="logoL"></img>
         <div className="input-field">
           <input
             type="text"
@@ -44,7 +45,7 @@ const Login = () => {
         </div>
         <button type="submit" className="buttonL">Login</button>
         <div className="signup-link">
-          <p>
+          <p className="pL">
             Não tem uma conta? <a onClick={() => dispatch({ type: 'CADASTRO_STAGE' })} href='#'>Registar</a>
           </p>
         </div>

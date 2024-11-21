@@ -1,12 +1,15 @@
 import { useState, useEffect, useRef, useContext } from 'react'
 import { CtContext } from '../context/Ct';
 import { motion } from 'framer-motion'
-import img1 from './img/svs0.jpg'
-import img2 from './img/svs3.jfif'
-import img3 from './img/svs1.jpg'
+import img1 from './img/test.jpg'
+import img2 from './img/test2.jpg'
+import img3 from './img/test3.jpg'
+import img4 from './img/test4.jpg'
+import img5 from './img/test5.jpg'
+import img6 from './img/test6.jpg'
 
 
-const images = [img1, img2, img3]
+const images = [img1, img2, img3, img4, img5, img6]
 
 const Serviços = () => {
     const carousel = useRef();

@@ -10,13 +10,16 @@ body {
 }
 
 .container-cadastro {
-  width: 350px;
-  background: rgba(0, 0, 0, 0.15);
+  width: 450px;
+  background: rgba(0, 0, 0, 0.388);
   backdrop-filter: blur(10px);
-  border: 2px solid rgba(67, 60, 60, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   padding: 40px;
+  justify-content: center;
+  margin-top: 70px;
 }
+
 
 h2 {
   text-align: center;
@@ -24,40 +27,148 @@ h2 {
   color: rgb(0, 0, 0);
 }
 
-label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: white;
-}
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"] {
+.container-cadastro .name {
+  position: relative;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+  height: 50px;
+  margin: 10px auto;
+}
+
+.container-cadastro .email {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 10px auto;
+}
+
+.container-cadastro .senha {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 10px auto;
+}
+
+.container-cadastro .confirmaSenha {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 10px auto;
+}
+
+.name input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
   font-size: 16px;
+  color: #fff;
+  padding: 15px 40px 15px 20px;
+  margin-top: 10px;
+  justify-content: space-between;
 }
 
-input[type="submit"] {
-  background: #ffbb13;
-  margin-left: 50px;
-  width: 250px;
+.email input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 15px 40px 15px 20px;
+  margin-top: 10px;
+  justify-content: space-between;
 }
 
-input[type="submit"]:hover {
-  background: #ffbb13;
-  margin-left: 50px;
-  width: 250px;
+.senha input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 15px 40px 15px 20px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.confirmaSenha input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 15px 40px 15px 20px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.name .icon {
+  position: absolute;
+  right: 25px;
+  top: 70%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #fff;
+}
+
+.email .icon {
+  position: absolute;
+  right: 25px;
+  top: 70%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #fff;
+}
+
+.senha .icon {
+  position: absolute;
+  right: 25px;
+  top: 70%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #fff;
+}
+
+.confirmaSenha .icon {
+  position: absolute;
+  right: 25px;
+  top: 70%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #fff;
 }
 
 p {
   font-size: 14px;
   margin-bottom: 15px;
   text-align: center;
+}
+
+.buttonC {
+  background: #ffbb13;
+  margin-left: 50px;
+  width: 250px;
+  margin-top: 30px;
+}
+
+.logoC {
+  width: 90px;
+  cursor: pointer;
+  align-items: center;
+  margin-left: 125px;
+  
+}
+
+input::placeholder {
+  color: #fff;
 }
