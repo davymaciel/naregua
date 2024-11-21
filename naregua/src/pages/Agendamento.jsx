@@ -133,7 +133,7 @@ const Agendamento = () => {
             </select>
             <br />
 
-            <p><strong>Total:</strong> R${total},00</p>
+            <p className='pA'><strong>Total:</strong> R${total},00</p>
 
             <button type="submit" className="agendamento-button">Confirmar Agendamento</button>
         </form>

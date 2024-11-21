@@ -5,20 +5,22 @@
     justify-content: center;
     margin: 50px auto;
     width: 100%;
-    background-color: #f9f9f9;
+    background-color: rgba(0, 0, 0, 0.388);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
+    margin-top: 40px;
 }
 
 .agendamento-title {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #333;
+    color: #ffffff;
 }
 
 .agendamento-input,
@@ -26,23 +28,25 @@
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+
 }
 
 .agendamento-button {
     background: #ffbb13;
-    margin-left: 50px;
+    margin-left: 20px;
     width: 250px;
 }
 
 .agendamento-button:hover {
-    background-color: #0056b3;
+    background-color: rgba(80, 54, 46, 0.81);
 }
 
 label {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .agendamento-checkboxes {
@@ -70,4 +74,8 @@ label {
     .agendamento-title {
         font-size: 1.5rem;
     }
+}
+
+.pA {
+    color: #ffffff;
 }
