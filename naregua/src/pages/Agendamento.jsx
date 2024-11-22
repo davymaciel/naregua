@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Agendamento.css';
+import logoImage from './img/Naregualogo1.png';
 
 const Agendamento = () => {
     const navigate = useNavigate();
@@ -39,6 +40,12 @@ const Agendamento = () => {
         return horarios;
     };
 
+    // Função para verificar se o horário está reservado
+    const isHorarioReservado = (horario) => {
+        const agendamentos = JSON.parse(localStorage.getItem('agendamentos')) || [];
+        return agendamentos.some((agendamento) => agendamento.dia === formData.dia && agendamento.horario === horario);
+    };
+
     const handleChangeServico = (e) => {
         const { name, checked } = e.target;
 
@@ -65,6 +72,18 @@ const Agendamento = () => {
         }
 
         const selectedServices = Object.keys(formData.servicos).filter(service => formData.servicos[service]);
+
+        // Verifica se o horário já está reservado
+        if (isHorarioReservado(formData.horario)) {
+            alert('Este horário já está reservado. Por favor, escolha outro.');
+            return;
+        }
+
+        // Salvar o agendamento no localStorage
+        const agendamentos = JSON.parse(localStorage.getItem('agendamentos')) || [];
+        agendamentos.push({ ...formData, servicos: selectedServices, total });
+        localStorage.setItem('agendamentos', JSON.stringify(agendamentos));
+
         console.log('Agendamento Realizado:', { ...formData, servicos: selectedServices });
 
         alert('Agendamento realizado com sucesso!');
@@ -73,6 +92,7 @@ const Agendamento = () => {
 
     return (
         <form className="agendamento-form" onSubmit={handleSubmit}>
+            
             <h2 className="agendamento-title">Agendamento de Horário</h2>
 
             <label htmlFor="dia">Escolha o dia:</label>
@@ -99,8 +119,8 @@ const Agendamento = () => {
             >
                 <option value="" disabled>Selecione um horário</option>
                 {generateHorarios().map((horario) => (
-                    <option key={horario} value={horario}>
-                        {horario}
+                    <option key={horario} value={horario} disabled={isHorarioReservado(horario)}>
+                        {horario} {isHorarioReservado(horario) && '(Reservado)'}
                     </option>
                 ))}
             </select>

@@ -41,9 +41,18 @@ const Cadastro = () => {
     }
   };
 
+  const handleLogoClick = () => {
+    navigate('/'); // Redireciona para a página inicial ao clicar no logo
+  };
+
   return (
     <div className="container-cadastro">
-      <img src={logoImage} alt="Logo NaRégua" className="logoC" />
+      <img
+        src={logoImage}
+        alt="Logo NaRégua"
+        className="logoC"
+        onClick={handleLogoClick} // Adicionando o evento de clique no logo
+      />
       <form onSubmit={handleSubmit}>
         <div className="name">
           <input 

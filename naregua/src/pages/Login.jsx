@@ -26,17 +26,27 @@ const Login = () => {
     if (user) {
       console.log("Login bem-sucedido:", user);
       setError("");
-      navigate('/'); // Redireciona para a página de agendamento após login
+      navigate('/Agendamento'); // Redireciona para a página de agendamento após login
     } else {
       setError("Login ou senha inválida");
     }
   };
 
+  const handleLogoClick = () => {
+    navigate('/'); // Redireciona para a página inicial ao clicar no logo
+  };
+
   return (
     <div className="containerL">
       <form onSubmit={handleSubmit}>
-        <img src={logoImage} alt="Logo NaRégua" className="logoL" />
+        <img
+          src={logoImage}
+          alt="Logo NaRégua"
+          className="logoL"
+          onClick={handleLogoClick} // Adicionando o evento de clique no logo
+        />
         <div className="input-field">
+          
           <input
             type="text"
             placeholder="Email"

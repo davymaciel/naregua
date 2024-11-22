@@ -25,8 +25,8 @@ const Home = () => {
           <li><a className='aN4' href="#contato">Informações</a></li>
         </ul>
         <div className="buttonsLC">
-          <button onClick={() => dispatch({ type: 'LOGIN_STAGE' })}><Link to={'Segundo'}>Login</Link></button>
-          <button onClick={() => dispatch({ type: 'CADASTRO_STAGE' })}><Link to={'Terceiro'}>Cadastro</Link></button>
+          <button onClick={() => dispatch({ type: 'LOGIN_STAGE' })}><Link to={'Login'}>Login</Link></button>
+          <button onClick={() => dispatch({ type: 'CADASTRO_STAGE' })}><Link to={'Cadastro'}>Cadastro</Link></button>
         </div>
       </div>
 

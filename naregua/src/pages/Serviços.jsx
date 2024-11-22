@@ -44,7 +44,7 @@ const Serviços = () => {
                     ))}
 
                 </motion.div>
-                <button onClick={() => dispatch({ type: 'AGENDAMENTO_STAGE' })} className='buttonAG'><Link to={'Quarto'}>Agende seu Horário</Link></button>
+                <button onClick={() => dispatch({ type: 'AGENDAMENTO_STAGE' })} className='buttonAG'><Link to={'Agendamento'}>Agende seu Horário</Link></button>
             </motion.div>
             
         </div>

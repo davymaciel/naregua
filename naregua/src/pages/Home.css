@@ -207,7 +207,7 @@ section {
 }
 
 #sobre {
-  background-image: url("./img/fundo.png");
+  background-image: url("./img/loginbc1.jfif");
   background-size: cover;
 }
 #servicos {
@@ -346,4 +346,29 @@ h1 {
   font-family: "Archivo Black", sans-serif;
   height: 5px;
   margin-top: 20px;
+}
+
+.buttonsLC, button a {
+  color: #ffffff; 
+  text-decoration: none; 
+}
+
+.buttonsLC button a:visited {
+  color: #ffffff; 
+}
+
+.buttonsAG button a:hover {
+  color: #ffffff; 
+}
+.buttonsAG, button a {
+  color: #ffffff; 
+  text-decoration: none; 
+}
+
+.buttonsAG button a:visited {
+  color: #ffffff; 
+}
+
+.buttonAG button a:hover {
+  color: #ffffff;
 }
