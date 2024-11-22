@@ -5,18 +5,23 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Cadastro from './pages/Cadastro'
 import Agendamento from './pages/Agendamento'
+import {BrowserRouter,Route, Routes} from 'react-router-dom'
 
 const App = () => {
   const [CtState, dispatch] = useContext(CtContext);
 
   return (
-    <div>
-      {CtState.Stage === 'First' && <Home/>}
-      {CtState.Stage === 'Second' && <Login/>}
-      {CtState.Stage === 'Third' && <Cadastro/>}
-      {CtState.Stage === 'Fourth' && <Agendamento/>}
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/'element={<Home/>}/>
+      <Route path='Segundo'element={<Login/>}/>
+      <Route path='Terceiro'element={<Cadastro/>}/>
+      <Route path='Quarto'element={<Agendamento/>}/>
+      <Route path= '*' element={<h1>Not Found</h1>}/>
+      
+       </Routes>
+      </BrowserRouter>
   );
 };
 
-export default App;
+export default App

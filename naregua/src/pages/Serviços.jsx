@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useContext } from 'react'
 import { CtContext } from '../context/Ct';
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom';
 import img1 from './img/test.jpg'
 import img2 from './img/test2.jpg'
 import img3 from './img/test3.jpg'
@@ -43,7 +44,7 @@ const Serviços = () => {
                     ))}
 
                 </motion.div>
-                <button onClick={() => dispatch({ type: 'AGENDAMENTO_STAGE' })} className='buttonAG'>Agende seu Horário</button>
+                <button onClick={() => dispatch({ type: 'AGENDAMENTO_STAGE' })} className='buttonAG'><Link to={'Quarto'}>Agende seu Horário</Link></button>
             </motion.div>
             
         </div>
