@@ -70,7 +70,7 @@ const Login = () => {
         <button type="submit" className="buttonL">Login</button>
         <div className="signup-link">
           <p className="pL">
-            Não tem uma conta? <a onClick={() => navigate('/Terceiro')} href="#">Registrar</a>
+            Não tem uma conta? <a onClick={() => navigate('/Cadastro')} href="#">Registrar</a>
           </p>
         </div>
       </form>
