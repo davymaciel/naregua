@@ -36,6 +36,63 @@ h1 {
   justify-content: space-between;
   padding: 2px 2%;
   background-color: #000000;
+  position: relative;
+}
+
+.navbar .aN1::before {
+  content: '';
+  position: absolute;
+  top: 65%;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: .3s;
+}
+
+.navbar .aN1:hover::before {
+  width: 3%;
+}
+
+.navbar .aN2::before {
+  content: '';
+  position: absolute;
+  top: 65%;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: .3s;
+}
+
+.navbar .aN2:hover::before {
+  width: 5%;
+}
+
+.navbar .aN3::before {
+  content: '';
+  position: absolute;
+  top: 65%;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: .3s;
+}
+
+.navbar .aN3:hover::before {
+  width: 4%;
+}
+
+.navbar .aN4::before {
+  content: '';
+  position: absolute;
+  top: 65%;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: .3s;
+}
+
+.navbar .aN4:hover::before {
+  width: 7%;
 }
 
 .logo {

@@ -1,3 +1,4 @@
+// Home.js
 import { useContext } from 'react';
 import { CtContext } from '../context/Ct';
 import logoImage from './img/Naregualogo1.png';
@@ -7,7 +8,6 @@ import Equipe from './Equipe';
 import Contato from './Contato';
 import Footer from './Footer';
 import "./Home.css";
-import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [CtState, dispatch] = useContext(CtContext);
@@ -24,8 +24,8 @@ const Home = () => {
           <li><a href="#contato">Informações</a></li>
         </ul>
         <div className="buttonsLC">
-          <button onClick={() => dispatch({ type: 'LOGIN_STAGE' })}><Link to={'Segundo'}>Login</Link></button>
-          <button onClick={() => dispatch({ type: 'CADASTRO_STAGE' })}><Link to={'Terceiro'}>Cadastro</Link></button>
+          <button onClick={() => dispatch({ type: 'LOGIN_STAGE' })}>Login</button>
+          <button onClick={() => dispatch({ type: 'CADASTRO_STAGE' })}>Cadastro</button>
         </div>
       </div>
 
