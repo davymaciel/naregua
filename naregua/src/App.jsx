@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Cadastro from './pages/Cadastro'
 import Agendamento from './pages/Agendamento'
+import Final from './pages/Final'
 import {BrowserRouter,Route, Routes} from 'react-router-dom'
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <Route path='Login'element={<Login/>}/>
       <Route path='Cadastro'element={<Cadastro/>}/>
       <Route path='Agendamento'element={<Agendamento/>}/>
+      <Route path='Final'element={<Final/>}/>
       <Route path= '*' element={<h1>Not Found</h1>}/>
       
        </Routes>

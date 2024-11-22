@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Agendamento.css';
 import logoImage from './img/Naregualogo1.png';
+import { Link } from 'react-router-dom';
 
 const Agendamento = () => {
     const navigate = useNavigate();
@@ -162,7 +163,7 @@ const Agendamento = () => {
 
             <p className='pA'><strong>Total:</strong> R${total.toFixed(2).replace('.', ',')}</p>
 
-            <button type="submit" className="agendamento-button">Confirmar Agendamento</button>
+            <button type="submit" className="agendamento-button"><Link to={'/Final'}>Confirmar Agendamento</Link></button>
         </form>
     );
 };
