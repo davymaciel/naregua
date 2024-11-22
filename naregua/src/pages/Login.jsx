@@ -44,7 +44,7 @@ const Login = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-900 text-white">
-      <div className="w-full max-w-md p-6">
+      <div className="w-full max-w-md p-6 bg-gray-800 bg-opacity-70 rounded-lg">
         <h2 className="text-2xl font-bold mb-6">
           {isLogin ? "Login" : "Cadastro"}
         </h2>

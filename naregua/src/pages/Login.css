@@ -1,111 +1,106 @@
-#root {
+/* Estilo para o corpo da página */
+body {
   margin: 0;
   padding: 0;
-  background-color: transparent;
+  background: url('https://i.pinimg.com/736x/78/92/e8/7892e82565b125180acb25318ad6ec9c.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Garantir a altura de tela cheia */
+  color: #fff;
+}
+
+/* Estilo do contêiner principal */
+.flex {
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.116); /* Fundo translúcido para destaque */
 }
 
-body {
-  background: url('https://i.pinimg.com/736x/78/92/e8/7892e82565b125180acb25318ad6ec9c.jpg');
-  background-size: cover;
+.root {
+  background-color: #55555571;
 }
 
-.containerL {
-  width: 450px;
-  background: rgba(0, 0, 0, 0.388);
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  padding: 40px;
-  justify-content: center;
-  margin-top: 70px;
-}
-
-
-.containerL .input-field {
-  position: relative;
+/* Formulário */
+.w-full {
   width: 100%;
-  height: 50px;
-  margin: 30px auto;
+  max-width: 400px; /* Define um limite de largura */
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-.input-field input {
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  outline: none;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 40px;
-  font-size: 16px;
-  color: #fff;
-  padding: 20px 45px 20px 25px;
-}
-
-.input-field input::placeholder {
-  color: #fff;
-}
-
-.input-field .icon {
-  position: absolute;
-  right: 25px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 16px;
-  color: #fff;
-}
-
-.containerL .recall-forget {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14.5px;
-  margin: -15px 0 15px;
-}
-
-.recall-forget label input {
-  accent-color: #fff;
-  margin-right: 4px;
-}
-
-.recall-forget a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.recall-forget a:hover {
-  text-decoration: underline;
-}
-
-.containerL .signup-link {
-  font-size: 14.5px;
+/* Títulos e textos */
+.text-2xl {
+  font-size: 1.5rem;
+  font-weight: bold;
   text-align: center;
-  margin: 20px 0 15px;
+  margin-bottom: 20px;
 }
 
-.signup-link p a {
+.text-sm {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background: #333;
   color: #fff;
-  text-decoration: none;
-  font-weight: 600;
 }
 
-.signup-link p a:hover {
-  text-decoration: underline; 
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 1px solid #007BFF;
+  outline: none;
 }
 
-.buttonL {
-  background: #ffbb13;
-  margin-left: 50px;
-  width: 250px;
-}
-
-.logoL {
-  width: 90px;
+/* Botão principal */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px 15px;
+  background: #007BFF;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
   cursor: pointer;
-  align-items: center;
-  margin-left: 125px;
+  transition: background 0.5s ease;
 }
 
-.pL{
-  color: #fff;
+button[type="submit"]:hover {
+  background: #0056b3;
 }
+
+/* Botão de alternar entre login e cadastro */
+.text-blue-400 {
+  color: #007BFF;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.text-blue-400:hover {
+  color: #0056b3;
+}
+
+/* Mensagem de erro */
+.text-red-500 {
+  color: #ff4d4d;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: -10px;
+}
+
