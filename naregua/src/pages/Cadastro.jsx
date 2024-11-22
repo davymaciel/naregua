@@ -36,7 +36,7 @@ const Cadastro = () => {
       setError("Cadastro realizado com sucesso!");
       
       setTimeout(() => {
-        navigate('/Segundo'); // Redireciona para a página de login após o cadastro
+        navigate('/Login'); // Redireciona para a página de login após o cadastro
       }, 1500);
     }
   };
