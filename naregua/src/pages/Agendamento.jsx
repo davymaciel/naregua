@@ -87,8 +87,7 @@ const Agendamento = () => {
 
         console.log('Agendamento Realizado:', { ...formData, servicos: selectedServices });
 
-        alert('Agendamento realizado com sucesso!');
-        navigate('/');
+    
     };
 
     return (
