@@ -30,11 +30,13 @@ html, body, #root {
      border: none;
      margin-right: 15px;
      justify-content: space-between;
- }
+     
  
  button:hover {
      color: white;
      background: rgba(80, 54, 46, 0.81);
+     text-decoration: none;
+ }
  }     
 
  h1 {

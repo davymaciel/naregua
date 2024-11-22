@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import logoImage from './img/Naregualogo1.png';
+import { useNavigate } from 'react-router-dom';
 import './Agendamento.css';
 
 const Agendamento = () => {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         dia: '',
         horario: '',
@@ -54,6 +55,10 @@ const Agendamento = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (!formData.dia || !formData.horario) {
+            alert('Por favor, preencha todos os campos obrigatórios.');
+            return;
+        }
         if (!formData.barbeiro) {
             alert('Por favor, selecione um barbeiro.');
             return;
@@ -61,11 +66,12 @@ const Agendamento = () => {
 
         const selectedServices = Object.keys(formData.servicos).filter(service => formData.servicos[service]);
         console.log('Agendamento Realizado:', { ...formData, servicos: selectedServices });
+
         alert('Agendamento realizado com sucesso!');
+        navigate('/');
     };
 
     return (
-    <div>
         <form className="agendamento-form" onSubmit={handleSubmit}>
             <h2 className="agendamento-title">Agendamento de Horário</h2>
 
@@ -80,7 +86,6 @@ const Agendamento = () => {
                 className="agendamento-input"
                 min={new Date().toISOString().split('T')[0]}
             />
-
             <br />
 
             <label htmlFor="horario">Escolha o horário:</label>
@@ -131,15 +136,14 @@ const Agendamento = () => {
                 <option value="Lucas">Lucas</option>
                 <option value="Matheus">Matheus</option>
                 <option value="Rafael">Rafael</option>
-                <option value="Rafael">João</option>
+                <option value="João">João</option>
             </select>
             <br />
 
-            <p className='pA'><strong>Total:</strong> R${total},00</p>
+            <p className='pA'><strong>Total:</strong> R${total.toFixed(2).replace('.', ',')}</p>
 
             <button type="submit" className="agendamento-button">Confirmar Agendamento</button>
         </form>
-    </div>    
     );
 };
 

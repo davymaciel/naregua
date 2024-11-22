@@ -1,79 +1,51 @@
-import { useState, useContext, useEffect} from "react";
+import { useState, useContext, useEffect } from "react";
 import { FaUser, FaLock } from "react-icons/fa";
 import { CtContext } from '../context/Ct';
-import { User, Lock, UserPlus } from 'lucide-react'
+import { useNavigate } from 'react-router-dom';
 import logoImage from './img/Naregualogo1.png';
 import "./Login.css";
 
-const Login = ({ onLogin }) => {
+const Login = () => {
+  const navigate = useNavigate();
   const [CtState, dispatch] = useContext(CtContext);
-  const [isLogin, setIsLogin] = useState(true)
-  const [username, setUsername] = useState('');
-  const [login, setLogin] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('')
+  const [login, setLogin] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   useEffect(() => {
     if (!localStorage.getItem('users')) {
-      localStorage.setItem('users', JSON.stringify([]))
+      localStorage.setItem('users', JSON.stringify([]));
     }
-  }, [])
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const users = JSON.parse(localStorage.getItem('users'))
+    const users = JSON.parse(localStorage.getItem('users'));
 
-     if (isLogin) {
-      const user = users.find((u) => u.login === login && u.password === password)
-      if (user) {
-        onLogin(user)
-      } else {
-        setError('Login ou senha inválida')
-      }
+    const user = users.find((u) => u.login === login && u.senha === password);
+    if (user) {
+      console.log("Login bem-sucedido:", user);
+      setError("");
+      navigate('/'); // Redireciona para a página de agendamento após login
     } else {
-      if (users.some((u) => u.login === login)) {
-        setError('Login já existe')
-      } else {
-        const newUser = { username, login, password }
-        localStorage.setItem('users', JSON.stringify([...users, newUser]))
-        setIsLogin(true)
-        setError('Cadastro realizado com sucesso. Por favor, faça login.')
-      }
+      setError("Login ou senha inválida");
     }
-  }
-
+  };
 
   return (
     <div className="containerL">
-              <h2 className="text-2xl font-bold mb-6">
-          {isLogin ? 'Login' : 'Cadastro'}
-        </h2>
       <form onSubmit={handleSubmit}>
-      
-      <img src={logoImage} alt="Logo NaRégua" className="logoL"></img>
-      {!isLogin && (
+        <img src={logoImage} alt="Logo NaRégua" className="logoL" />
         <div className="input-field">
           <input
             type="text"
-            placeholder="E-mail"
+            placeholder="Email"
             required
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            value={login}
+            onChange={(e) => setLogin(e.target.value)}
           />
           <FaUser className="icon" />
         </div>
-      )}
-
-      <div className="relative">
-        <input
-        type="text"
-        id="login"
-        value={login}
-        onChange={(e) => setLogin(e.target.value)}
-        required
-        />
-        </div>
-
         <div className="input-field">
           <input
             type="password"
@@ -84,10 +56,11 @@ const Login = ({ onLogin }) => {
           />
           <FaLock className="icon" />
         </div>
+        {error && <p style={{ color: '#ff0000', textAlign: 'center', marginTop: '10px' }}>{error}</p>}
         <button type="submit" className="buttonL">Login</button>
         <div className="signup-link">
           <p className="pL">
-            Não tem uma conta? <a onClick={() => dispatch({ type: 'CADASTRO_STAGE' })} href='#'>Registar</a>
+            Não tem uma conta? <a onClick={() => navigate('/Terceiro')} href="#">Registrar</a>
           </p>
         </div>
       </form>

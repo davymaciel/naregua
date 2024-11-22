@@ -308,6 +308,8 @@ h1 {
 .carousel button {
   text-align: center;
   align-items: center;
+  text-decoration: none;
+  color: white;
 }
 
 .Footer {
